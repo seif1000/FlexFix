@@ -6,6 +6,7 @@ const sharedVariants = {
 };
 
 const sharedColors = {
+  netflixRed: colors.netflixRed,
   primary: colors.primary,
   primaryLight: colors.primaryLight,
   white: colors.white,

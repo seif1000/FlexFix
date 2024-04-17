@@ -15,6 +15,7 @@ const placeboBlue = '#ECF5FF';
 const steel = '#4B4B4B';
 const ashenvaleNights = '#0F3D71';
 const brotherBlue = '#B0B8C7';
+const netflixRed = '#E50914';
 
 const gray = {
   s50: '#FFFFFF',
@@ -46,4 +47,5 @@ export default {
   steel,
   ashenvaleNights,
   brotherBlue,
+  netflixRed,
 };
