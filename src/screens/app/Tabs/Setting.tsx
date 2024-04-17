@@ -1,10 +1,18 @@
-import {View, Text} from 'react-native';
+import {Text, SafeAreaView} from 'react-native';
 import React from 'react';
+import Header from '@components/Header';
+import auth from '@react-native-firebase/auth';
 
 export default function Setting() {
   return (
-    <View>
-      <Text>Setting</Text>
-    </View>
+    <SafeAreaView>
+      <Header text="Settings" hasBack={false} />
+      <Text
+        onPress={() => {
+          auth().signOut();
+        }}>
+        Logout
+      </Text>
+    </SafeAreaView>
   );
 }
