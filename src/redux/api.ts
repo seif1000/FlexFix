@@ -18,24 +18,43 @@ export const api = createApi({
     },
   }),
   endpoints: builder => ({
-    getTopPopular: builder.query<Movie[], number>({
+    getMovies: builder.query<Movie[], number>({
       query: page => {
         console.log('🚀 -> file: api.ts:24 -> page:', page);
-        return `/movie/top_rated?language=en-US&include_adult=false&page=${page}`;
+        return `discover/movie?language=en-US&page=${page}`;
       },
       transformResponse: (response: any) => {
         return response.results;
       },
       forceRefetch: ({currentArg, previousArg}) => previousArg !== currentArg,
     }),
-    getTopPopularShows: builder.query<Movie[], number>({
+    getSeries: builder.query<Movie[], number>({
       query: page => {
-        return `/tv/top_rated?language=en-US&include_adult=false&page=${page}`;
+        console.log('🚀 -> file: api.ts:24 -> page:', page);
+        return `discover/tv?language=en-US&page=${page}`;
       },
       transformResponse: (response: any) => {
         return response.results;
       },
       forceRefetch: ({currentArg, previousArg}) => previousArg !== currentArg,
+    }),
+
+    getTopPopular: builder.query<Movie[], number>({
+      query: page => {
+        console.log('🚀 -> file: api.ts:24 -> page:', page);
+        return `/movie/top_rated?language=en-US&include_adult=false&page=${page}`;
+      },
+      transformResponse: (response: any) => {
+        return response.results.slice(0, 5);
+      },
+    }),
+    getTopPopularShows: builder.query<Movie[], number>({
+      query: page => {
+        return `/tv/top_rated?language=en-US&include_adult=false&page=${page}`;
+      },
+      transformResponse: (response: any) => {
+        return response.results.slice(0, 5);
+      },
     }),
     getDetails: builder.query<MovieDetails, {stype: string; id: number}>({
       query: ({stype, id}) => {
@@ -59,10 +78,15 @@ export const api = createApi({
 });
 
 export const {
+  useGetMoviesQuery,
+  useLazyGetMoviesQuery,
+  useGetSeriesQuery,
+  useLazyGetSeriesQuery,
+
   useGetTopPopularQuery,
-  useLazyGetTopPopularQuery,
+
   useGetTopPopularShowsQuery,
-  useLazyGetTopPopularShowsQuery,
+
   useLazySearchQuery,
   useGetDetailsQuery,
 } = api;
