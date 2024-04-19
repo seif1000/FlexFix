@@ -61,7 +61,7 @@ export default function Register({navigation}: ScreenProps) {
             <Input
               handleChange={handleChange('email')}
               value={values.email}
-              placeholder="Eamil"
+              placeholder="Email"
               handleBlur={handleBlur('email')}
               label="Email"
             />

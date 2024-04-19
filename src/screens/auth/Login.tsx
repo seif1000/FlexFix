@@ -28,7 +28,7 @@ export default function Login({navigation}: ScreenProps) {
         style={styles.logo}
         source={require('@assets/icons/netflix.png')}
       />
-      <Text style={styles.text}>Create New Account</Text>
+      <Text style={styles.text}>Login</Text>
       <Formik
         enableReinitialize={true}
         validationSchema={SignupSchema}
@@ -60,7 +60,7 @@ export default function Login({navigation}: ScreenProps) {
             <Input
               handleChange={handleChange('email')}
               value={values.email}
-              placeholder="Eamil"
+              placeholder="Email"
               handleBlur={handleBlur('email')}
               label="Email"
             />

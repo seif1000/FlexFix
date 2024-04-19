@@ -11,7 +11,7 @@ export default function AppStack() {
     <AppNavigator.Navigator screenOptions={{headerShown: false}}>
       <AppNavigator.Screen name={'AppStack'} component={ButtomTab} />
       <AppNavigator.Screen name={'MovieDetails'} component={Details} />
-      {/* <AppNavigator.Screen name={'MovieDetails'} component={Details} /> */}
+
       <AppNavigator.Screen name={'Search'} component={Search} />
     </AppNavigator.Navigator>
   );

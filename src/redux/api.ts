@@ -74,6 +74,30 @@ export const api = createApi({
       },
       forceRefetch: ({currentArg, previousArg}) => previousArg !== currentArg,
     }),
+
+    getMovieTrailer: builder.query<string | null, {type: string; id: string}>({
+      query: ({type, id}) => {
+        if (type === 'movie') {
+          return `/movie/${id}/videos?language=en-US`;
+        } else {
+          return `/tv/${id}/videos?language=en-US`;
+        }
+      },
+      transformResponse: (response: any) => {
+        const trialer = response.results.find(
+          (item: any) =>
+            item.type === 'Trailer' &&
+            item.site === 'YouTube' &&
+            item.official === true,
+        );
+
+        if (trialer) {
+          return trialer.key;
+        } else {
+          return null;
+        }
+      },
+    }),
   }),
 });
 
@@ -87,6 +111,9 @@ export const {
 
   useGetTopPopularShowsQuery,
 
+  useSearchQuery,
+
   useLazySearchQuery,
   useGetDetailsQuery,
+  useGetMovieTrailerQuery,
 } = api;

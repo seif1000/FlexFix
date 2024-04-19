@@ -33,11 +33,11 @@ export default function Movie() {
   }, [getMovieQuery.isFetching, getMovieQuery.isLoading]);
 
   const _renderTopItems = ({item, index}: {item: Movie; index: number}) => {
-    return <TopMovieCard item={item} />;
+    return <TopMovieCard item={item} type="movie" />;
   };
 
   const _renderItems = ({item, index}: {item: Movie; index: number}) => {
-    return <MovieCard item={item} />;
+    return <MovieCard item={item} type="movie" />;
   };
 
   const _renderListFooterComponent = () => {

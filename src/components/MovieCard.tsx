@@ -4,15 +4,25 @@ import type {Movie} from '../types/models/Movie';
 import {createStyleSheet, useStyles} from 'react-native-unistyles';
 import {mScale} from '../styles/mixins';
 import Ripple from 'react-native-material-ripple';
+import {useNavigation} from '@react-navigation/native';
 
 type MovieCardProps = {
   item: Movie;
+  type: string;
 };
 
-export default function MovieCard({item}: MovieCardProps) {
+export default function MovieCard({item, type}: MovieCardProps) {
   const {styles, theme} = useStyles(stylesheet);
+  const navigation = useNavigation();
   return (
-    <Ripple style={styles.container}>
+    <Ripple
+      onPress={() => {
+        navigation.navigate('MovieDetails', {
+          id: item.id,
+          type: type,
+        });
+      }}
+      style={styles.container}>
       <Image
         source={{
           uri: `https://image.tmdb.org/t/p/original${item?.poster_path}`,
