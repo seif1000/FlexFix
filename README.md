@@ -1,48 +1,62 @@
-#FlexFlix
+# FlexFlix
+
+## Tech used 
+
+1. React Native
+2. Redux & Redux Toolkit
+3. react-native-unistyles for styling
+
+
+## Index
++ [Demo](#demo)
+
++ [Installation](#installation)
+
+## Demo<a name="demo"></a>
+Check [Demo](https://lablabee-de5bc.web.app/)
 
 
 
 
+## Installation<a name="installation"></a>
+### Running Locally
+Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
 
-# Getting Started
+ 
+1. Clone or Download the repository
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+	```
+	$ git clone git@github.com:seif1000/FlexFix.git
+	
+	```
 
-## Step 1: Start the Metro Server
+### client 
+1. Install Dependencies
+	```
+	   npm install 
+	```
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+2. Android
+	```
+ 	npm run android
+ 
+        ```
+3. IOS
+	```
+ 	npm run ios
 
-To start Metro, run the following command from the _root_ of your React Native project:
+  ```
 
-```bash
-# using npm
-npm start
+4. Start the app
+	```
+ 	npm start
 
-# OR using Yarn
-yarn start
-```
+  ```
 
-## Step 2: Start your Application
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### For Android
+	
 
-```bash
-# using npm
-npm run android
 
-# OR using Yarn
-yarn android
-```
 
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
 
