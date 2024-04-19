@@ -15,6 +15,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C036AA4D478D80C4D0FB7908 /* Pods_FlexFlix_FlexFlixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC8D5B3ECA820F509B0BAAB /* Pods_FlexFlix_FlexFlixTests.framework */; };
 		D8A998430669F6D2B2B3F9D3 /* Pods_FlexFlix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8390034B00C6271B526B67F /* Pods_FlexFlix.framework */; };
+		F135C455D1EC481E9B67E5E6 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AABD568D5919424CB1CF6B76 /* BootSplash.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		89C6BE57DB24E9ADA2F236DE /* Pods-FlexFlix-FlexFlixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexFlix-FlexFlixTests.release.xcconfig"; path = "Target Support Files/Pods-FlexFlix-FlexFlixTests/Pods-FlexFlix-FlexFlixTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F8390034B00C6271B526B67F /* Pods_FlexFlix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexFlix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABD568D5919424CB1CF6B76 /* BootSplash.storyboard */ = {isa = PBXFileReference; name = "BootSplash.storyboard"; path = "FlexFlix/BootSplash.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				AABD568D5919424CB1CF6B76 /* BootSplash.storyboard */,
 			);
 			name = FlexFlix;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				046CAAC72BCEF7480066C378 /* GoogleService-Info.plist in Resources */,
+				F135C455D1EC481E9B67E5E6 /* BootSplash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
