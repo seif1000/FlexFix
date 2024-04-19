@@ -20,7 +20,6 @@ export const api = createApi({
   endpoints: builder => ({
     getMovies: builder.query<Movie[], number>({
       query: page => {
-        console.log('🚀 -> file: api.ts:24 -> page:', page);
         return `discover/movie?language=en-US&page=${page}`;
       },
       transformResponse: (response: any) => {
@@ -30,7 +29,6 @@ export const api = createApi({
     }),
     getSeries: builder.query<Movie[], number>({
       query: page => {
-        console.log('🚀 -> file: api.ts:24 -> page:', page);
         return `discover/tv?language=en-US&page=${page}`;
       },
       transformResponse: (response: any) => {

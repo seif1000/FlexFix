@@ -98,7 +98,6 @@ export default function Movie() {
               showsVerticalScrollIndicator={false}
               onEndReachedThreshold={0.3}
               onEndReached={() => {
-                console.log('🚀 -> file: Movie.tsx:108 -> onEndReached -> ');
                 if (getMovieQuery.isFetching || getMovieQuery.isLoading) {
                   return;
                 }

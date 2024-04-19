@@ -45,7 +45,6 @@ export default function Register({navigation}: ScreenProps) {
               message: error.message,
               type: 'danger',
             });
-           
           }
         }}>
         {({
