@@ -14,12 +14,12 @@ Dark Mode | Light Mode
 
 
 ## Index
-+ [Demo](#demo)
++ [Apk](#demo)
 
 + [Installation](#installation)
 
 ## Demo<a name="demo"></a>
-Check [Demo](https://drive.google.com/file/d/1hkgUvDWZUje9ax917QfhGyjm9ySPRmwj/view?usp=sharing)
+Check [Apk](https://drive.google.com/file/d/1hkgUvDWZUje9ax917QfhGyjm9ySPRmwj/view?usp=sharing)
 
 
 
