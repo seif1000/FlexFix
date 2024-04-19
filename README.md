@@ -3,7 +3,7 @@
 
 Dark Mode | Light Mode
 --- | ---
-[<img src="https://github.com/seif1000/FlexFix/blob/main/Simulator%20Screen%20Shot%20-%20iPhone%2014%20-%202024-04-19%20at%2021.23.43.png" width="250"/>](image.png) | [<img src="https://github.com/seif1000/FlexFix/blob/main/WhatsApp%20Image%202024-04-19%20at%209.25.30%20PM.jpeg"/>](image.png)
+[<img src="https://github.com/seif1000/FlexFix/blob/main/Simulator%20Screen%20Shot%20-%20iPhone%2014%20-%202024-04-19%20at%2021.23.43.png" width="250"/>](image.png) | [<img src="https://github.com/seif1000/FlexFix/blob/main/Simulator%20Screen%20Shot%20-%20iPhone%2014%20-%202024-04-19%20at%2022.06.47.png"/>](image.png)
 
 
 ## Tech used 
