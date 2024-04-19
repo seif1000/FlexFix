@@ -45,13 +45,13 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 	```
  	npm run ios
 
-  ```
+        ```
 
 4. Start the app
 	```
  	npm start
 
-  ```
+        ```
 
 
 
