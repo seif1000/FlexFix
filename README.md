@@ -1,5 +1,5 @@
 # FlexFlix
-![Screenshot](https://github.com/seif1000/FlexFix/blob/main/Simulator%20Screen%20Shot%20-%20iPhone%2014%20-%202024-04-19%20at%2021.23.43.png)
+![Screenshot](<img src="https://github.com/seif1000/FlexFix/blob/main/Simulator%20Screen%20Shot%20-%20iPhone%2014%20-%202024-04-19%20at%2021.23.43.png " alt="Screenshot" width="600" height="400">)
 
 ## Tech used 
 
