@@ -19,7 +19,7 @@ Dark Mode | Light Mode
 + [Installation](#installation)
 
 ## Demo<a name="demo"></a>
-Check [Apk](https://drive.google.com/file/d/1hkgUvDWZUje9ax917QfhGyjm9ySPRmwj/view?usp=sharing)
+Download The [Apk](https://drive.google.com/file/d/1hkgUvDWZUje9ax917QfhGyjm9ySPRmwj/view?usp=sharing)
 
 
 
