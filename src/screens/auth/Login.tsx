@@ -44,7 +44,7 @@ export default function Login({navigation}: ScreenProps) {
               message: error.message,
               type: 'danger',
             });
-            console.log('🚀 -> file: Register.tsx:74 -> error', error);
+          
           }
         }}>
         {({
