@@ -71,6 +71,7 @@ export default function Login({navigation}: ScreenProps) {
               placeholder="Password"
               handleBlur={handleBlur('password')}
               label="Password"
+              isSecure={true}
             />
             {errors.password && (
               <Text style={styles.error}> {errors.password}</Text>
@@ -80,8 +81,8 @@ export default function Login({navigation}: ScreenProps) {
               text={'Login'}
               width={0}
               onPress={handleSubmit}
-              disabled={false}
-              loading={false}
+              disabled={isSubmitting}
+              loading={isSubmitting}
             />
             <TouchableOpacity
               onPress={() => {

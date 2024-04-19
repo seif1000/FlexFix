@@ -4,17 +4,13 @@ const black = '#000000';
 const primary = '#0A77FF';
 const primaryLight = '#2C8AFF';
 
-const easternBreeze = '#DAE0E6';
-const blackOfNight = '#323539';
 const fuelTown = '#5A6472';
-const snowflake = '#EFEFF1';
-const beautifulDarkness = '#696B71';
+const placeboBlue = '#ECF5FF';
+const blackOfNight = '#323539';
+const easternBreeze = '#DAE0E6';
 const red = '#FF1C1C';
 const green = '#29E27E';
-const placeboBlue = '#ECF5FF';
-const steel = '#4B4B4B';
-const ashenvaleNights = '#0F3D71';
-const brotherBlue = '#B0B8C7';
+
 const netflixRed = '#E50914';
 
 const gray = {
@@ -39,13 +35,10 @@ export default {
   easternBreeze,
   blackOfNight,
   fuelTown,
-  snowflake,
-  beautifulDarkness,
+
   red,
   green,
   placeboBlue,
-  steel,
-  ashenvaleNights,
-  brotherBlue,
+
   netflixRed,
 };

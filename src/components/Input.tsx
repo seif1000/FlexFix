@@ -12,6 +12,7 @@ type Props = {
   keyboardType?: string;
   placeholderTextColor?: string;
   label: string;
+  isSecure?: boolean;
 };
 
 const Input = ({
@@ -22,6 +23,7 @@ const Input = ({
   editable,
   keyboardType,
   label,
+  isSecure = false,
 }: Props) => {
   const {styles} = useStyles(stylesheet);
   return (
@@ -36,6 +38,7 @@ const Input = ({
         value={value}
         editable={editable}
         keyboardType={keyboardType ? 'number-pad' : 'default'}
+        secureTextEntry={isSecure}
       />
     </View>
   );

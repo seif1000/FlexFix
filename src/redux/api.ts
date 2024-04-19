@@ -11,7 +11,7 @@ export const api = createApi({
       // Add the token to the headers
       headers.set(
         'Authorization',
-        'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MWFiMmQ2OWVmZGYwZGVlYTc3MWI5MzJhMWI5ZTUwMyIsInN1YiI6IjY0NjVmZWJkMDA2YjAxMDEyNmY0YTZiNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.zDcGrsO1STnfN2MErlzUK5b6Sn2b8dZ_Foh6Ctzm9CA',
+        'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYWEwNGM2Nzk4NGY1MjNhMzIyZDQ4ZWNkZTVhZmI0NyIsInN1YiI6IjY1NTY2MWNjZDRmZTA0MDEzOTgyNzQ2YyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.B8Tgd9tNZToxgwBNj8Hl4hiiE_1rnOP0ePDJ4FdFhRU',
       );
 
       return headers;
@@ -41,7 +41,6 @@ export const api = createApi({
 
     getTopPopular: builder.query<Movie[], number>({
       query: page => {
-        console.log('🚀 -> file: api.ts:24 -> page:', page);
         return `/movie/top_rated?language=en-US&include_adult=false&page=${page}`;
       },
       transformResponse: (response: any) => {

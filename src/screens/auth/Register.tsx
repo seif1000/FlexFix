@@ -72,6 +72,7 @@ export default function Register({navigation}: ScreenProps) {
               placeholder="Password"
               handleBlur={handleBlur('password')}
               label="Password"
+              isSecure={true}
             />
             {errors.password && (
               <Text style={styles.error}> {errors.password}</Text>

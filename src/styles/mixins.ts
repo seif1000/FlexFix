@@ -18,35 +18,10 @@ export function scale(size: number): number {
 }
 
 /**
- * Vertical scale
- */
-export function vScale(size: number): number {
-  return (height / baseHeight) * size;
-}
-
-/**
  * Moderate scale
  */
 export function mScale(size: number, factor = 0.1): number {
   return size + (scale(size) - size) * factor;
-}
-
-/**
- * Convert pixel to dp
- */
-export function toDp(px: number) {
-  return px / PixelRatio.get();
-}
-
-/**
- * Add opacity to a hex color
- */
-export function opacity(hexColor: string, opacityValue: number): string {
-  const red = parseInt(hexColor.slice(1, 3), 16);
-  const green = parseInt(hexColor.slice(3, 5), 16);
-  const blue = parseInt(hexColor.slice(5, 7), 16);
-
-  return `rgba(${red}, ${green}, ${blue}, ${opacityValue})`;
 }
 
 export const breakpoints = {
@@ -61,10 +36,9 @@ export const breakpoints = {
 
 export default {
   scale,
-  vScale,
+
   mScale,
-  toDp,
-  opacity,
+
   screenWidth,
   screenHeight,
   baseWidth,
