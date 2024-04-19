@@ -1,5 +1,5 @@
 # FlexFlix
-![Dark Mode](https://github.com/seif1000/FlexFix/blob/main/Simulator%20Screen%20Shot%20-%20iPhone%2014%20-%202024-04-19%20at%2021.23.43.png)
+![Dark Mode](https://github.com/seif1000/FlexFix/blob/main/Simulator%20Screen%20Shot%20-%20iPhone%2014%20-%202024-04-19%20at%2021.23.43.png | width=100)
 
 ## Tech used 
 
