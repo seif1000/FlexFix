@@ -19,7 +19,7 @@ Dark Mode | Light Mode
 + [Installation](#installation)
 
 ## Demo<a name="demo"></a>
-Check [Demo](https://lablabee-de5bc.web.app/)
+Check [Demo](https://drive.google.com/file/d/1hkgUvDWZUje9ax917QfhGyjm9ySPRmwj/view?usp=sharing)
 
 
 
